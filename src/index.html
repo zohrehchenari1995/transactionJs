@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="container__title">
+        برای مشاهده لیست تراکنش ها لطفا روی دکمه زیر کلیک کنید
+      </h1>
+      <div class="container__button">
+        <p class="button__text">بارگذاری تراکنش ها</p>
+      </div>
+
+      <div class="backdrop hidden"></div>
+      <div class="modal hidden">
+        <div class="container__table">
+          <div class="table__detail">
+            <h2 class="table__title">لیست تراکنش ها</h2>
+            <div class="search__closeBtn">
+              <input
+                type="number"
+                class="table__search"
+                placeholder="براساس شماره پیگیری جستجو کنید..."
+                
+                autofocus
+              />
+              <div class="table__closeBtn">
+                <i class="fa-regular fa-circle-xmark"></i>
+              </div>
+            </div>
+          </div>
+
+         <div class="body__table">
+           <p class="table__title-inner">لیست تراکنش های شما</p>
+           <table class="table">
+            <thead class="table__header">
+              <tr>
+                <th>ردیف</th>
+                <th>نوع تراکنش</th>
+                <th class="table__price">مبلغ <i class="fa-solid fa-circle-chevron-down"></i></th>
+                <th>شماره پیگیری</th>
+                <th class="table__date">تاریخ تراکنش <i class="fa-solid fa-circle-chevron-down"></i></th>
+                <th>روز هفته</th>
+                <th>ساعت تراکنش</th>
+              </tr>
+            </thead>
+        
+            <tbody class="table__body">
+              <!-- <tr class="table__row">
+                <td class="row__id">10</td>
+                <td>افزایش اعتبار</td>
+                <td>1000000</td>
+                <td>123456</td>
+                <td>11/9/1400</td>
+                <td>ساعت 12:30</td>
+              </tr> -->
+            </tbody>
+           
+          </table>
+         </div>
+
+          <button class="dark__mood">
+            <span class="mood__sun"><i class="fa-solid fa-sun"></i></span>
+            <div class="dark__mood--inner"></div>
+            <span class="mood__moon"><i class="fa-solid fa-moon"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/modal.js" type="module"></script>
+  </body>
+</html>
+
+
+
